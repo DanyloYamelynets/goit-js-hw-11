@@ -18,4 +18,3 @@ export class SearchApi {
     }
   }
 }
-// totalHits / 40 < this.page && totalHits !== 0
