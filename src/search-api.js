@@ -10,9 +10,8 @@ export class SearchApi {
     const URL = `${BASE_URl}${filter}`;
     this.page += 1;
     try {
-      return await axios.get(URL).then(res => {
-        return res.data;
-      });
+      const responce = await axios.get(URL);
+      return responce.data;
     } catch (error) {
       console.log(error);
     }
